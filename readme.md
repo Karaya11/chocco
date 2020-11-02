@@ -1,0 +1,2 @@
+# LoftSchool. Учебный проект CHOCCO
+
