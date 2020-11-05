@@ -99,7 +99,7 @@ img {
 }
 
 .hero {
-  background: url("../../img/decore/узор 1.png") right bottom no-repeat;
+  background: url("../img/decore/узор 1.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 650px;
@@ -107,7 +107,7 @@ img {
   position: relative;
 }
 .hero::before {
-  content: url("../../img/decore/Лист 3.svg");
+  content: url("../img/decore/Лист 3.svg");
   position: absolute;
   bottom: -40px;
   left: 2%;
