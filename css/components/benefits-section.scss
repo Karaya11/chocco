@@ -1,9 +1,9 @@
 .benefits-section{
-  background: url("/img/decore/узор\ лист\ 1.png") left top 57% no-repeat;
+  background: url("../../img/decore/узор\ лист\ 1.png") left top 57% no-repeat;
   position: relative;
 
   &:before{
-    content: url("/img/decore/малина\ 1.png");
+    content: url("../../img/decore/малина\ 1.png");
     position: absolute;
     bottom: -80px;
     left: 0px;

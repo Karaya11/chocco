@@ -1,15 +1,15 @@
 .reviews-section{
   position: relative;
-  background: url("/img/decore/отзывы-лист.svg") left bottom no-repeat;
+  background: url("../../img/decore/отзывы-лист.svg") left bottom no-repeat;
   
   &:before{
-    content: url("/img/decore/отзывы-ягоды*.svg");
+    content: url("../../img/decore/отзывы-ягоды*.svg");
     position: absolute;
     bottom: 80px;
   }
    
   &::after{
-    content: url("/img/decore/отзывы-ягода.svg");
+    content: url("../../img/decore/отзывы-ягода.svg");
     position: absolute;
     top: 200px;
     right: 0;
@@ -38,7 +38,7 @@
 
 
   &::after{
-    content: url("/img/decore/отзывы-ветка.svg");
+    content: url("../../img/decore/отзывы-ветка.svg");
     position: absolute;
     top: 20px;
     right: 0px;
