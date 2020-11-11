@@ -1,89 +1,120 @@
-.reviews-section{
+.reviews-section {
   position: relative;
   background: url("../img/decore/отзывы-лист.svg") left bottom no-repeat;
-  
-  &:before{
+
+  &:before {
     content: url("../img/decore/отзывы-ягоды*.svg");
     position: absolute;
-    bottom: 80px;
+    bottom: rem(80px);
   }
-   
-  &::after{
+
+  &::after {
     content: url("../img/decore/отзывы-ягода.svg");
     position: absolute;
-    top: 200px;
+    top: rem(150px);
     right: 0;
+
+
+    @include tablets{
+      top: rem(0px);
+    }
   }
 }
 
-.reviews__display{
+.reviews__display {
   background: #f8faf9;
-  padding: 42px 142px 42px 42px;
-  margin-bottom: 20px;
+  padding: rem(42px) rem(142px) rem(42px) rem(42px);
+  margin-bottom: rem(20px);
   overflow: hidden;
   position: relative;
 
-  &::before{
+  @include tablets{
+    padding: rem(56px) rem(25px) rem(25px);
+  }
+
+  &::before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: #fff;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 
 
-  &::after{
+  &::after {
     content: url("../img/decore/отзывы-ветка.svg");
     position: absolute;
-    top: 20px;
-    right: 0px;
-    }
+    top: rem(20px);
+    right: rem(0px);
+
+ 
+  }
 }
 
-.reviews__display-inner{
+.reviews__display-inner {
   display: flex;
   position: relative;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
-.reviews__switcher{
+.reviews__switcher {
   display: flex;
   justify-content: center;
 }
 
-.reviews__avatar{
-  width: 254px;
-  height: 260px;
+.reviews__avatar {
+  width: rem(254px);
+  height: rem(260px);
+
+  @include tablets {
+    width: rem(130px);
+    height: rem(132px);
+  }
 }
 
-.reviews__avatar-img{
+.reviews__avatar-img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.reviews__content{
+
+.reviews__content {
   flex: 1;
-  margin-left: 40px;
-  padding-top: 20px;
+  margin-left: rem(40px);
+  padding-top: rem(20px);
+
+  @include tablets{
+    margin-left: 0;
+  }
+
+  @include phones{
+    margin-left: 0;
+  }
 }
 
-.reviews__title{
-  font-size: 27px;
+.reviews__title {
+  font-size: rem(27px);
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: rem(12px);
   color: black;
 }
 
-.reviews__text{
-  margin-bottom: 12px;
+.reviews__text {
+  margin-bottom: rem(12px);
 }
 
-.reviews__author{
-  font-size: 18px;
+.reviews__author {
+  font-size: rem(18px);
   font-weight: bolder;
   color: black;
 }

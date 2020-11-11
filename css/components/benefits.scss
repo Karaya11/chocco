@@ -1,6 +1,10 @@
 .benefits{
   display: flex;
   text-align: center;
+
+  @include phones{
+    flex-direction: column;
+  }
 }
 
 .benefits__item{
@@ -8,12 +12,21 @@
   padding: 0 3%;
   position: relative;
 
+  @include phones{
+    padding: 0;
+    margin-bottom: 0;
+  }
+
   &::before{
     content: url("../img/decore/Combined\ shape\ 2204.svg");
     position: absolute;
-    top: 30px;
-    right: 0px;
+    top: rem(30px);
+    right: rem(0px);
     transform: translate(50%);
+
+    @include phones{
+      display: none;
+    }
   }
 
   &:first-child{

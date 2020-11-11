@@ -1,16 +1,24 @@
 .header{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.menu{
+  margin: 0 30px;
+  padding-top: 5px;
 }
 
 .menu__list{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu__item{
-  margin-right: 15px;
+  margin-right: rem(15px);
+  margin-bottom: 10px;
 
   &:last-child{
     margin-right: 0;
@@ -22,14 +30,28 @@
 }
 
 .phone-number{
-  font-size: 24px;
+  font-size: rem(24px);
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
+.phone-number__icon{
+  flex-shrink: 0;
+}
+
 .phone-number__icon-elem{
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: rem(12px);
+  height: rem(12px);
+  margin-right: rem(6px);
+}
+
+.phone-number.header__phone-number{
+  @include tablets{
+    display: none;
+  }
+}
+
+.phone-number__text{
+  white-space: nowrap;
 }

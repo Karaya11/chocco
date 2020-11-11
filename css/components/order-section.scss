@@ -5,14 +5,23 @@
   &::before{
     content: url("../img/decore/section-order-blueberry.png");
     position: absolute;
-    left: 41px;
-    bottom: 69px;
+    left: rem(41px);
+    bottom: rem(69px);
+
+    @include phones{
+      display: none;
+    }
+  
   }
 
   &::after{
     content: url("../img/decore/section-order-leaf.png");
     position: absolute;
-    right: 10px;
-    bottom: 58px;
+    right: rem(10px);
+    bottom: rem(58px);
+
+    @include phones{
+      display: none;
+    }
   }
 }

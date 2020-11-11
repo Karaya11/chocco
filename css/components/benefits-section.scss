@@ -2,10 +2,22 @@
   background: url("../img/decore/узор\ лист\ 1.png") left top 57% no-repeat;
   position: relative;
 
+  @include phones{
+    background: none;
+  }
+
+  @include tablets{
+    background-position: left top 10%;
+  }
+
   &:before{
     content: url("../img/decore/малина\ 1.png");
     position: absolute;
-    bottom: -80px;
-    left: 0px;
+    bottom: rem(-80px);
+    left: rem(0px);
+
+    @include phones{
+      display: none;
+    }
   }
 }
