@@ -75,6 +75,7 @@
 .reviews__avatar {
   width: rem(254px);
   height: rem(260px);
+  z-index: 1000;
 
   @include tablets {
     width: rem(130px);

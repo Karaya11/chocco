@@ -4,11 +4,11 @@ html{
 
 
   @include tablets {
-    font-size: $baseFontSize -1px;
+    font-size: $baseFontSize - 1px;
   }
 
   @include phones {
-    font-size: $baseFontSize -2px;
+    font-size: $baseFontSize - 2px;
   }
 }
 
@@ -24,6 +24,10 @@ body{
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   color: #666666;
+}
+
+.body__hide-overflow{
+  overflow: hidden;
 }
 
 .wrapper{

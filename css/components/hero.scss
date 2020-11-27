@@ -45,8 +45,14 @@
     text-align: center;
 
     &:before{
-      content: url(../../img/decore/comp-header-phones.png);
+      content: "";
+      background-image: url(../img/decore/comp-header-phones.png);
       margin-bottom: 16px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: rem(325px);
+      height: rem(372px);
+      background-position:center ;
     }
   }
 }

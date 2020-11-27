@@ -1,0 +1,55 @@
+.contains{
+background: url(../img/click.svg);
+position: relative;
+width: rem(91px);
+height: rem(91px);
+cursor: pointer;
+
+&:hover .contains__menu{
+  left: 100%;
+  opacity: 1;
+  transition:opacity .5s;
+}
+
+  @include tablets{
+    display: none;
+  }
+  @include phones{
+    display: none;
+  }
+}
+
+
+.contains__menu{
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  left: -10000px;
+  display: flex;
+  flex-direction: column;
+  padding: rem(30px);
+  width: rem(273px);
+  opacity: 0;
+  transition:opacity .5s;
+}
+
+.contains__item{
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(28px);
+  color: #000000;
+  font-weight: 500;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.contains__img{
+  margin-right: rem(16px);
+}
+
+.contains__value{
+  margin-left: auto;
+}

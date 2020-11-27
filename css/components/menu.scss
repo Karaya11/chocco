@@ -17,3 +17,16 @@
   text-decoration: none;
   white-space: nowrap;
 }
+
+.menu__list--vertical{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.menu--vertical{
+  font-size: 36px;
+  color: #fff;
+  display: block;
+
+}

@@ -21,6 +21,7 @@ $darkGreen: #0b4d3c;
 //z-index
 
 $z-fixed-menu: 100;
+$z-fullscreen-menu: 200;
 
 //components
 @import "./components/section";
@@ -41,3 +42,11 @@ $z-fixed-menu: 100;
 @import "./components/form";
 @import "./components/radio";
 @import "./components/fixed-menu";
+@import "./components/map.scss";
+@import "./components/phone-number.scss";
+@import "./components/footer.scss";
+@import "./components/socials.scss";
+@import "./components/contacts.scss";
+@import "./components/fullscreen-menu.scss";
+@import "./components/slider.scss";
+@import "./components/contains.scss";
