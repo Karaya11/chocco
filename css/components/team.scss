@@ -1,0 +1,116 @@
+.team-section{
+  position: relative;
+  &::before{
+    content: "";
+    background-image: url(../img/team-leaf.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: rem(-200px);
+    right: 0;
+    min-width: rem(196px);
+    min-height: rem(453px);
+  }
+  &::after{
+    content: "";
+    background-image: url(../img/blueberry.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: rem(-25px);
+    right: 0;
+    min-width: rem(135px);
+    min-height: rem(130px);
+    z-index: 1000;
+  }
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item {
+  flex: 1;
+  text-align: center;
+  margin-right: rem(20px);
+  max-width: rem(220px);
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    margin-right: 0;
+    margin-bottom: rem(16px);
+  }
+
+}
+
+
+.team__member {
+  margin-bottom: rem(20px);
+}
+
+.team__title {
+  color: #323232;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: rem(21px);
+  position: relative;
+  cursor: pointer;
+  margin-bottom: rem(8px);
+
+  &::after {
+    content: "";
+    background-image: url('../img/triangle.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 100%;
+    bottom: 25%;
+    width: rem(9px);
+    height: rem(9px);
+
+  }
+}
+
+.team__content {
+  overflow: hidden;
+  height: 0;
+  transition: height .3s;
+}
+
+.team__desc {
+  font-weight: 400;
+  color: #292929;
+}
+
+.team--version--desktop {
+  position: absolute;
+  top: 100%;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+
+.team--version--mobile {
+  top: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include tablets {
+    display: flex;
+  }
+}
+
+
+
+.team__content-block {
+  padding-bottom: rem(5px);
+}

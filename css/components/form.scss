@@ -46,6 +46,7 @@
   padding: rem(18px) rem(11px);
   border: solid rem(3px) transparent;
 
+
   @include tablets{
     padding: rem(5px) ;
   }
@@ -67,6 +68,9 @@
   }
 }
 
+.input-error{
+  border: 3px solid orangered;
+}
 
 .form__controls{
   display: flex;

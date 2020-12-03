@@ -4,6 +4,16 @@
 }
 
 .slider{
+  position: relative;
+}
+
+.bx-wrapper {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.slider__item{
   display: flex;
   align-items: center;
 
@@ -70,6 +80,14 @@
 
 .slider__text{
   margin-bottom: rem(20px);
+
+  // p{
+  //   padding-right: 20px;
+
+  //   @include tablets{
+  //     padding-right: 0;
+  //   }
+  // }
 }
 
 .slider__columns{
@@ -114,12 +132,19 @@
   position: absolute;
   top: 50%;
   transform: translate(-50%);
+  cursor: pointer;
+  z-index: 1000;
+  
+  @include tablets {
+    top: 20%;
+  }
 }
 
 .slider__btn--prev{
   transform: rotate(180deg);
+  left: -2%;  
 }
 
 .slider__btn--next{
-  right: rem(-30px);
+  right: -3%;
 }

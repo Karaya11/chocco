@@ -1,6 +1,8 @@
 .contains{
 background: url(../img/click.svg);
 position: relative;
+background-repeat: no-repeat;
+background-size: cover;
 width: rem(91px);
 height: rem(91px);
 cursor: pointer;
