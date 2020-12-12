@@ -919,6 +919,7 @@ img {
 
 .footer {
   position: absolute;
+  bottom: 0px;
   left: 0;
   right: 0;
   padding: 1.1111111111rem 0;
