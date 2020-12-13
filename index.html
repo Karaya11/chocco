@@ -19,13 +19,13 @@
             <img src="./img/decore/Group.svg" alt="chocco logo" class="logo">
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item"> <a href="#" class="menu__link">О нас</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Батончики</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Команда</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Меню</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Отзывы</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Как мы работаем</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Контакты</a> </li>
+                <li class="menu__item" data-scroll-to="benefits"> <a href="#" class="menu__link">О нас</a> </li>
+                <li class="menu__item" data-scroll-to="slider"> <a href="#" class="menu__link">Батончики</a> </li>
+                <li class="menu__item" data-scroll-to="team"> <a href="#" class="menu__link">Команда</a> </li>
+                <li class="menu__item" data-scroll-to="products"> <a href="#" class="menu__link">Меню</a> </li>
+                <li class="menu__item" data-scroll-to="reviews"> <a href="#" class="menu__link">Отзывы</a> </li>
+                <li class="menu__item" data-scroll-to="player"> <a href="#" class="menu__link">Как мы работаем</a> </li>
+                <li class="menu__item" data-scroll-to="map"> <a href="#" class="menu__link">Контакты</a> </li>
               </ul>
             </nav>
             <a href="tel:+78009039090" class="phone-number header__phone-number">
@@ -43,7 +43,7 @@
           <div class="hero__title-section">
             <h1 class="hero__main-title">Натуральные шоколадные батончики</h1>
             <div class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
-            <a href="#" class="btn btn--theme--white">Заказать</a>
+            <a href="#" data-scroll-to="order" class="btn btn--theme--white">Заказать</a>
           </div>
           <div class="hero__icons-section">
             <ul class="features">
@@ -807,17 +807,17 @@
       </ul>
     </nav>
   </div>
-  <nav class="fixed-menu">
+  <nav class="fixed-menu" >
     <ul class="fixed-menu__list">
-      <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="1"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="2"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="3"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="4"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="5"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="6"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="7"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="8"></a></li>
+      <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link" data-scroll-to="hero"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="benefits"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="slider"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="team"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="products"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="reviews"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="player"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="order"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="map"></a></li>
     </ul>
   </nav>
   <div id="modal" class="modal">
@@ -830,9 +830,9 @@
       </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="index.js"></script>
